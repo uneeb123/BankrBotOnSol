@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/uneebagha/Documents/max/BankrBotOnSol/src/lib/privy.ts"],"sourcesContent":["// Privy configuration\nexport const privyAppId = process.env.NEXT_PUBLIC_PRIVY_APP_ID || \"\";\n"],"names":[],"mappings":"AAAA,sBAAsB;;;;AACI;AAAnB,MAAM,aAAa,iEAAwC","debugId":null}},
-    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///Users/uneebagha/Documents/max/BankrBotOnSol/src/components/PrivyClientProvider.tsx"],"sourcesContent":["\"use client\";\n\nimport { PrivyProvider } from \"@privy-io/react-auth\";\nimport { privyAppId } from \"../lib/privy\";\n\nexport default function PrivyClientProvider({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <PrivyProvider\n      appId={privyAppId}\n      config={{\n        loginMethods: [\"twitter\"],\n        appearance: {\n          theme: \"dark\",\n          accentColor: \"#000000\",\n        },\n      }}\n    >\n      {children}\n    </PrivyProvider>\n  );\n}\n"],"names":[],"mappings":";;;;AAEA;AACA;AAHA;;;;AAKe,SAAS,oBAAoB,EAC1C,QAAQ,EAGT;IACC,qBACE,4TAAC,wbAAA,CAAA,gBAAa;QACZ,OAAO,sHAAA,CAAA,aAAU;QACjB,QAAQ;YACN,cAAc;gBAAC;aAAU;YACzB,YAAY;gBACV,OAAO;gBACP,aAAa;YACf;QACF;kBAEC;;;;;;AAGP;KAnBwB","debugId":null}}]
-}
