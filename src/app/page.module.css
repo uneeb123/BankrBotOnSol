@@ -1,168 +1,286 @@
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+.banner {
+  background-color: #a7f0c6;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+.bannerLink {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.version {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.disclaimerToggle {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.walletModeBtn,
+.profileBtn {
+  background-color: #333 !important;
+  color: white !important;
+  border: none !important;
+  padding: 5px 10px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  height: auto !important;
+  font-size: 14px !important;
+}
+
+.disclaimer {
+  background-color: #d8d0f0;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.recoveryNotice {
+  background-color: #ffcb91;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.recoveryLink {
+  color: #333;
+  text-decoration: underline;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  flex: 1;
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
+.activitySection,
+.chatSection,
+.walletSection {
+  background-color: #fff;
   border-radius: 4px;
-  font-weight: 600;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.ctas {
+.sectionTitle,
+.walletTitle {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.transaction {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
+.transactionDetails {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.arrow {
+  color: #666;
+}
+
+.address {
+  font-family: monospace;
+  color: #666;
+  font-size: 12px;
+}
+
+.checkBtn {
+  background-color: #4caf50;
+  color: white;
   border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  cursor: pointer;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
-}
-
-.footer {
-  grid-row-start: 3;
+.chatArea {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 15px;
+  min-height: 200px;
   display: flex;
-  gap: 24px;
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
 
-.footer a {
+.chatPlaceholder {
+  color: #999;
+  font-family: monospace;
+  width: 100%;
+}
+
+.messageCounter {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.usageBar {
+  background-color: #eee;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.usageProgress {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 2px;
+  text-align: right;
+  font-size: 10px;
+  color: white;
+}
+
+.chatFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.joinClubBtn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.walletInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.walletProvider {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
+  font-size: 14px;
 }
 
-.footer img {
-  flex-shrink: 0;
+.baseIcon {
+  background-color: #0052ff;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
+.walletBalance {
+  margin-left: auto;
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+.tradingWallet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #666;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+.walletAddress {
+  font-family: monospace;
+}
+
+.copyBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ethBalance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.ethIcon {
+  color: #666;
+}
+
+.ethAmount {
+  font-weight: bold;
+}
+
+.ethValue {
+  margin-left: auto;
+}
+
+.assetsLabel {
+  color: #666;
+  font-size: 14px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
 }

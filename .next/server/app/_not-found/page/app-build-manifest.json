@@ -1,0 +1,40 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/fed43_next_dist_66756e17._.js",
+      "static/chunks/src_app_favicon_ico_mjs_e0c81039._.js",
+      "static/chunks/[root of the server]__6271ab6f._.css",
+      "static/chunks/node_modules__pnpm_3759c68c._.js",
+      "static/chunks/0a1f7_viem__esm_errors_40f1247c._.js",
+      "static/chunks/0a1f7_viem__esm_utils_11b5157d._.js",
+      "static/chunks/0a1f7_viem__esm_actions_2fb3fa2a._.js",
+      "static/chunks/0a1f7_viem__esm_b3be7240._.js",
+      "static/chunks/02814_viem__esm_c7bc87a7._.js",
+      "static/chunks/d4c56_@privy-io_react-auth_dist_esm_privy-provider-DSQ8FU83_mjs_f684ebee._.js",
+      "static/chunks/d4c56_@privy-io_react-auth_dist_esm_5f076acd._.js",
+      "static/chunks/27fbc_@noble_curves_esm_6c6cddd0._.js",
+      "static/chunks/70a00_ox__esm_core_bc8a04b0._.js",
+      "static/chunks/bdf27_@coinbase_wallet-sdk_dist_7571727f._.js",
+      "static/chunks/98f11_libphonenumber-js_8aaa9712._.js",
+      "static/chunks/ab8f2_@heroicons_react_966ea923._.js",
+      "static/chunks/5d8e6_elliptic_dc2a7375._.js",
+      "static/chunks/node_modules__pnpm_46b57373._.js",
+      "static/chunks/b1869_@walletconnect_core_dist_index_es_9babb828.js",
+      "static/chunks/59bc4_@walletconnect_sign-client_dist_index_es_5ef3fb05.js",
+      "static/chunks/4f263_secure-password-utilities_esm_4aa463d6._.js",
+      "static/chunks/65157_@headlessui_react_dist_f4b8615b._.js",
+      "static/chunks/4845b_@floating-ui_react_dist_a8e75239._.js",
+      "static/chunks/4de26_@solana_web3_js_lib_index_browser_esm_79ab9999.js",
+      "static/chunks/node_modules__pnpm_21e4ee2f._.js",
+      "static/chunks/src_4f1733bc._.js",
+      "static/chunks/src_app_layout_tsx_06b35865._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_dde50c8f._.js",
+      "static/chunks/fed43_next_dist_compiled_b961d772._.js",
+      "static/chunks/fed43_next_dist_client_7c55ec4f._.js",
+      "static/chunks/fed43_next_dist_827db2a4._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_134baf67._.js"
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.accountInfo {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.accountTitle {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.accountAddress {
+  font-family: monospace;
+  color: #666;
+  margin: 0 0 15px 0;
+}
+
+.logoutButton {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoutIcon {
+  font-size: 14px;
+}
+
+.recoverySection {
+  padding: 20px;
+  background-color: #fff9e6;
+  border-bottom: 1px solid #eee;
+}
+
+.recoveryTitle {
+  font-size: 14px;
+  margin: 0 0 15px 0;
+}
+
+.setEmailButton {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emailIcon {
+  font-size: 14px;
+}
+
+.membershipSection {
+  padding: 20px;
+}
+
+.membershipTitle {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+}
+
+.pricingInfo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.priceLabel {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.period {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.paymentInfo {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.membershipButton {
+  background-color: #8a56ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.checkmark {
+  color: #4caf50;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.twitterUsername {
+  font-weight: bold;
+  color: #1da1f2;
+  margin: 0 0 10px 0;
+}

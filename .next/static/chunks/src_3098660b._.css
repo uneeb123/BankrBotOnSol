@@ -1,0 +1,545 @@
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.page-module___8aEwW__banner {
+  background-color: #a7f0c6;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.page-module___8aEwW__bannerLink {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.page-module___8aEwW__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.page-module___8aEwW__headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-module___8aEwW__logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.page-module___8aEwW__version {
+  font-size: 12px;
+  opacity: .8;
+}
+
+.page-module___8aEwW__disclaimerToggle {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.page-module___8aEwW__headerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-module___8aEwW__walletModeBtn, .page-module___8aEwW__profileBtn {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 5px 10px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  height: auto !important;
+  font-size: 14px !important;
+}
+
+.page-module___8aEwW__disclaimer {
+  background-color: #d8d0f0;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.page-module___8aEwW__recoveryNotice {
+  background-color: #ffcb91;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.page-module___8aEwW__recoveryLink {
+  color: #333;
+  text-decoration: underline;
+}
+
+.page-module___8aEwW__main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  flex: 1;
+}
+
+.page-module___8aEwW__activitySection, .page-module___8aEwW__chatSection, .page-module___8aEwW__walletSection {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 1px 3px #0000001a;
+}
+
+.page-module___8aEwW__sectionTitle, .page-module___8aEwW__walletTitle {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.page-module___8aEwW__transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.page-module___8aEwW__transactionDetails {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.page-module___8aEwW__arrow {
+  color: #666;
+}
+
+.page-module___8aEwW__address {
+  font-family: monospace;
+  color: #666;
+  font-size: 12px;
+}
+
+.page-module___8aEwW__checkBtn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.page-module___8aEwW__chatArea {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 15px;
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.page-module___8aEwW__chatPlaceholder {
+  color: #999;
+  font-family: monospace;
+  width: 100%;
+}
+
+.page-module___8aEwW__messageCounter {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.page-module___8aEwW__usageBar {
+  background-color: #eee;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.page-module___8aEwW__usageProgress {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 2px;
+  text-align: right;
+  font-size: 10px;
+  color: #fff;
+}
+
+.page-module___8aEwW__chatFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.page-module___8aEwW__joinClubBtn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-module___8aEwW__walletInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.page-module___8aEwW__walletProvider {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.page-module___8aEwW__baseIcon {
+  background-color: #0052ff;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.page-module___8aEwW__walletBalance {
+  margin-left: auto;
+}
+
+.page-module___8aEwW__tradingWallet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.page-module___8aEwW__walletAddress {
+  font-family: monospace;
+}
+
+.page-module___8aEwW__copyBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.page-module___8aEwW__ethBalance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.page-module___8aEwW__ethIcon {
+  color: #666;
+}
+
+.page-module___8aEwW__ethAmount {
+  font-weight: bold;
+}
+
+.page-module___8aEwW__ethValue {
+  margin-left: auto;
+}
+
+.page-module___8aEwW__assetsLabel {
+  color: #666;
+  font-size: 14px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+
+/* [project]/src/components/SignIn.module.css [app-client] (css) */
+.SignIn-module__bAJvaa__signInContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.SignIn-module__bAJvaa__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.SignIn-module__bAJvaa__logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.SignIn-module__bAJvaa__version {
+  font-size: 12px;
+  opacity: .8;
+}
+
+.SignIn-module__bAJvaa__disclaimer {
+  background-color: #d8d0f0;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.SignIn-module__bAJvaa__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.SignIn-module__bAJvaa__signInBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.SignIn-module__bAJvaa__signInButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 0;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.SignIn-module__bAJvaa__signInButton:hover {
+  background-color: #333;
+}
+
+.SignIn-module__bAJvaa__recoverLink {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.SignIn-module__bAJvaa__recoverLink:hover {
+  text-decoration: underline;
+}
+
+.SignIn-module__bAJvaa__signInInfo {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+
+/* [project]/src/components/ProfileModal.module.css [app-client] (css) */
+.ProfileModal-module__0CK3oa__modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.ProfileModal-module__0CK3oa__modal {
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #00000026;
+}
+
+.ProfileModal-module__0CK3oa__modalHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.ProfileModal-module__0CK3oa__closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.ProfileModal-module__0CK3oa__accountInfo {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.ProfileModal-module__0CK3oa__accountTitle {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.ProfileModal-module__0CK3oa__accountAddress {
+  font-family: monospace;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.ProfileModal-module__0CK3oa__logoutButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ProfileModal-module__0CK3oa__logoutIcon {
+  font-size: 14px;
+}
+
+.ProfileModal-module__0CK3oa__recoverySection {
+  padding: 20px;
+  background-color: #fff9e6;
+  border-bottom: 1px solid #eee;
+}
+
+.ProfileModal-module__0CK3oa__recoveryTitle {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+
+.ProfileModal-module__0CK3oa__setEmailButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ProfileModal-module__0CK3oa__emailIcon {
+  font-size: 14px;
+}
+
+.ProfileModal-module__0CK3oa__membershipSection {
+  padding: 20px;
+}
+
+.ProfileModal-module__0CK3oa__membershipTitle {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.ProfileModal-module__0CK3oa__pricingInfo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.ProfileModal-module__0CK3oa__priceLabel {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.ProfileModal-module__0CK3oa__price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ProfileModal-module__0CK3oa__period {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.ProfileModal-module__0CK3oa__paymentInfo {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.ProfileModal-module__0CK3oa__membershipButton {
+  background-color: #8a56ff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.ProfileModal-module__0CK3oa__benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ProfileModal-module__0CK3oa__benefit {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.ProfileModal-module__0CK3oa__checkmark {
+  color: #4caf50;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.ProfileModal-module__0CK3oa__twitterUsername {
+  font-weight: bold;
+  color: #1da1f2;
+  margin: 0 0 10px;
+}
+
+
+/*# sourceMappingURL=src_3098660b._.css.map*/

@@ -1,0 +1,89 @@
+.walletSection {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.walletTitle {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.walletInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.walletProvider {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.baseIcon {
+  background-color: #000000;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.walletBalance {
+  margin-left: auto;
+}
+
+.tradingWallet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.walletAddress {
+  font-family: monospace;
+}
+
+.copyBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ethBalance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.ethIcon {
+  color: #666;
+}
+
+.ethAmount {
+  font-weight: bold;
+}
+
+.ethValue {
+  margin-left: auto;
+}
+
+.assetsLabel {
+  color: #666;
+  font-size: 14px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}

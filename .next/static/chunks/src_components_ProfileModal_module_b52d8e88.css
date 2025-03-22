@@ -1,0 +1,172 @@
+/* [project]/src/components/ProfileModal.module.css [app-client] (css) */
+.ProfileModal-module__0CK3oa__modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.ProfileModal-module__0CK3oa__modal {
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #00000026;
+}
+
+.ProfileModal-module__0CK3oa__modalHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.ProfileModal-module__0CK3oa__closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.ProfileModal-module__0CK3oa__accountInfo {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.ProfileModal-module__0CK3oa__accountTitle {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.ProfileModal-module__0CK3oa__accountAddress {
+  font-family: monospace;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.ProfileModal-module__0CK3oa__logoutButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ProfileModal-module__0CK3oa__logoutIcon {
+  font-size: 14px;
+}
+
+.ProfileModal-module__0CK3oa__recoverySection {
+  padding: 20px;
+  background-color: #fff9e6;
+  border-bottom: 1px solid #eee;
+}
+
+.ProfileModal-module__0CK3oa__recoveryTitle {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+
+.ProfileModal-module__0CK3oa__setEmailButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ProfileModal-module__0CK3oa__emailIcon {
+  font-size: 14px;
+}
+
+.ProfileModal-module__0CK3oa__membershipSection {
+  padding: 20px;
+}
+
+.ProfileModal-module__0CK3oa__membershipTitle {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.ProfileModal-module__0CK3oa__pricingInfo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.ProfileModal-module__0CK3oa__priceLabel {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.ProfileModal-module__0CK3oa__price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ProfileModal-module__0CK3oa__period {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.ProfileModal-module__0CK3oa__paymentInfo {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.ProfileModal-module__0CK3oa__membershipButton {
+  background-color: #8a56ff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.ProfileModal-module__0CK3oa__benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ProfileModal-module__0CK3oa__benefit {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.ProfileModal-module__0CK3oa__checkmark {
+  color: #4caf50;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.ProfileModal-module__0CK3oa__twitterUsername {
+  font-weight: bold;
+  color: #1da1f2;
+  margin: 0 0 10px;
+}
+
+/*# sourceMappingURL=src_components_ProfileModal_module_b52d8e88.css.map*/
