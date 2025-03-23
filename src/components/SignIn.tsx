@@ -11,14 +11,16 @@ export default function SignIn() {
     authenticated
   } = usePrivy();
   
-  const { createWallet } = useSolanaWallets({
-    onSuccess: ({ wallet }) => {
-      console.log("Solana wallet created successfully:", wallet);
-    },
-    onError: (error) => {
-      console.error("Error creating Solana wallet:", error);
-    }
-  });
+  const { createWallet } = useSolanaWallets();
+  
+  // Handle wallet creation success/error manually
+  const handleWalletCreationSuccess = (wallet: any) => {
+    console.log("Solana wallet created successfully:", wallet);
+  };
+  
+  const handleWalletCreationError = (error: any) => {
+    console.error("Error creating Solana wallet:", error);
+  };
 
   // Check if we need to create a Solana wallet after login
   useEffect(() => {
@@ -48,12 +50,10 @@ export default function SignIn() {
   const handleSignInWithTwitter = async () => {
     if (ready) {
       try {
-        // Login specifically with Twitter
-        await login({
-          provider: "twitter",
-        });
-      } catch (error) {
-        console.error("Error signing in with Twitter:", error);
+        // Login with default options
+        await login();
+      } catch (error: any) {
+        console.error("Error signing in:", error);
       }
     }
   };
