@@ -1,0 +1,106 @@
+.chatSection {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.chatArea {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 250px;
+  margin-bottom: 10px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: #e3f2fd;
+  color: #000;
+}
+
+.botMessage {
+  align-self: flex-start;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.messageContent {
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.messageTime {
+  font-size: 10px;
+  color: #999;
+  text-align: right;
+}
+
+.messageCounter {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.usageBar {
+  background-color: #eee;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.usageProgress {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 2px;
+  text-align: right;
+  font-size: 10px;
+  color: white;
+}
+
+.inputArea {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.textInput {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  resize: none;
+  min-height: 40px;
+  font-family: inherit;
+}
+
+.sendButton {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}

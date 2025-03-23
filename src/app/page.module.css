@@ -89,12 +89,46 @@
   text-decoration: underline;
 }
 
-.main {
+.desktopMain {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 10px;
   padding: 10px;
   flex: 1;
+}
+
+.mobileMain {
+  display: none;
+  flex: 1;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .desktopMain {
+    display: none;
+  }
+
+  .mobileMain {
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    height: calc(100vh - 98px); /* Exact height for header and disclaimer */
+    padding: 0;
+  }
+  
+  .page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .walletModeBtn {
+    padding: 5px 5px !important;
+  }
+  
+  .header {
+    padding: 10px 10px;
+  }
 }
 
 .activitySection,

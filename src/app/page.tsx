@@ -6,6 +6,9 @@ import styles from "./page.module.css";
 import SignIn from "../components/SignIn";
 import ProfileModal from "../components/ProfileModal";
 import WalletSection from "../components/WalletSection";
+import ActivitySection from "../components/ActivitySection";
+import ChatSection from "../components/ChatSection";
+import TabLayout from "../components/TabLayout";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 export default function Home() {
@@ -21,6 +24,25 @@ export default function Home() {
   if (!authenticated) {
     return <SignIn />;
   }
+
+  // Define tabs for mobile layout
+  const tabs = [
+    {
+      id: "wallet",
+      label: "Wallet",
+      content: <WalletSection />
+    },
+    {
+      id: "chat",
+      label: "Chat",
+      content: <ChatSection />
+    },
+    {
+      id: "activity",
+      label: "Activity",
+      content: <ActivitySection />
+    }
+  ];
 
   // Otherwise, show the dashboard
   return (
@@ -45,43 +67,17 @@ export default function Home() {
         Use at your own risk. At this stage, Bankr supports only Solana.
       </div>
 
-      <main className={styles.main}>
-        <div className={styles.activitySection}>
-          <h2 className={styles.sectionTitle}>Activity</h2>
-          <div className={styles.transaction}>
-            <div className={styles.transactionDetails}>
-              <span className={styles.arrow}>▶</span>
-              Transfer TOBY to
-              <div className={styles.address}>
-                0x4e902e01d78300b0ba876562e99e66e929715e
-              </div>
-            </div>
-            <button className={styles.checkBtn}>✓</button>
-          </div>
-        </div>
-
-        <div className={styles.chatSection}>
-          <div className={styles.chatArea}>
-            <div className={styles.chatPlaceholder}>
-              {/* Welcome! What do you want to do? */}
-            </div>
-          </div>
-          <div className={styles.messageCounter}>
-            0 / 10 free daily messages used
-            <div className={styles.usageBar}>
-              <div className={styles.usageProgress} style={{ width: "0%" }}>
-                0.00%
-              </div>
-            </div>
-          </div>
-          <div className={styles.chatFooter}>
-            Enjoy Bankr without limits
-            <button className={styles.joinClubBtn}>Join Bankr Club</button>
-          </div>
-        </div>
-
+      {/* Desktop layout */}
+      <main className={styles.desktopMain}>
         <WalletSection />
+        <ChatSection />
+        <ActivitySection />
       </main>
+
+      {/* Mobile layout with tabs */}
+      <div className={styles.mobileMain}>
+        <TabLayout tabs={tabs} />
+      </div>
 
       <ProfileModal
         isOpen={isProfileModalOpen}
