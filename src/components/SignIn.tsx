@@ -12,15 +12,6 @@ export default function SignIn() {
   } = usePrivy();
   
   const { createWallet } = useSolanaWallets();
-  
-  // Handle wallet creation success/error manually
-  const handleWalletCreationSuccess = (wallet: any) => {
-    console.log("Solana wallet created successfully:", wallet);
-  };
-  
-  const handleWalletCreationError = (error: any) => {
-    console.error("Error creating Solana wallet:", error);
-  };
 
   // Check if we need to create a Solana wallet after login
   useEffect(() => {
@@ -52,7 +43,7 @@ export default function SignIn() {
       try {
         // Login with default options
         await login();
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error("Error signing in:", error);
       }
     }
